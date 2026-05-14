@@ -1,0 +1,82 @@
+{
+	"name": "transform",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "dataflow_source",
+						"type": "DatasetReference"
+					},
+					"name": "sourcecsv"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText7",
+						"type": "DatasetReference"
+					},
+					"name": "sink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "select1"
+				},
+				{
+					"name": "aggregate1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          Employee_ID as string,",
+				"          Full_Name as string,",
+				"          Gender as string,",
+				"          Age as short,",
+				"          Department as string,",
+				"          Job_Title as string,",
+				"          Employment_Type as string,",
+				"          Date_of_Joining as date,",
+				"          Years_of_Experience as short,",
+				"          Education_Level as string,",
+				"          Shift as string,",
+				"          Location as string,",
+				"          Salary_USD as integer,",
+				"          Performance_Rating as double,",
+				"          Status as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> sourcecsv",
+				"sourcecsv select(mapColumn(",
+				"          Employee_ID,",
+				"          Full_Name,",
+				"          Gender,",
+				"          Age,",
+				"          Department,",
+				"          Job_Title,",
+				"          Employment_Type,",
+				"          Date_of_Joining,",
+				"          Years_of_Experience,",
+				"          Shift,",
+				"          Location,",
+				"          Salary_USD,",
+				"          Status",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"select1 aggregate(groupBy(Salary_USD),",
+				"     Age = max(Age)) ~> aggregate1",
+				"aggregate1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink"
+			]
+		}
+	}
+}

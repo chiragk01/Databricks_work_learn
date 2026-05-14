@@ -1,0 +1,15 @@
+{
+	"name": "adf-chirag-tt",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3ccf461a-865c-4b8d-8691-ef65a783832c",
+		"tenantId": "a99f41fb-911a-49c7-bc99-18b9804910b1"
+	}
+}

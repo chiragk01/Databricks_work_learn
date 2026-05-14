@@ -1,0 +1,97 @@
+{
+	"name": "PL_Silver_to_Gold",
+	"properties": {
+		"activities": [
+			{
+				"name": "Customer_Metrics",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/ranjankumar.sharma1971@gmail.com/customer_metrics",
+					"baseParameters": {
+						"load_date": {
+							"value": "@formatDateTime(utcNow(),'yyyy-MM-dd')",
+							"type": "Expression"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_Databricks_Cluster",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Customer_Segmentation",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Customer_Metrics",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/ranjankumar.sharma1971@gmail.com/customer_segmentation",
+					"baseParameters": {
+						"load_date": {
+							"value": "@formatDateTime(utcNow(),'yyyy-MM-dd')",
+							"type": "Expression"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_Databricks_Cluster",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Market_Basket_Analysis",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/ranjankumar.sharma1971@gmail.com/market_basket_analysis",
+					"baseParameters": {
+						"load_date": {
+							"value": "@formatDateTime(utcNow(),'yyyy-MM-dd')",
+							"type": "Expression"
+						},
+						"min_support": "0.01",
+						"min_confidence": "0.3"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_Databricks_Cluster",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-05-13T14:17:32Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
