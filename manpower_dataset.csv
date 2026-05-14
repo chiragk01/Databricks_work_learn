@@ -1,0 +1,41 @@
+Employee_ID,Full_Name,Gender,Age,Department,Job_Title,Employment_Type,Date_of_Joining,Years_of_Experience,Education_Level,Shift,Location,Salary_USD,Performance_Rating,Status
+EMP001,Rajesh Kumar,Male,34,Operations,Operations Manager,Full-Time,15-03-2018,10,Bachelor's,Day,Mumbai,72000,4.2,Active
+EMP002,Priya Sharma,Female,28,Human Resources,HR Executive,Full-Time,01-06-2021,5,Master's,Day,Delhi,45000,3.8,Active
+EMP003,Amit Singh,Male,45,Finance,Senior Accountant,Full-Time,20-09-2010,20,Master's,Day,Bangalore,85000,4.5,Active
+EMP004,Sunita Patel,Female,31,Marketing,Marketing Analyst,Full-Time,10-11-2019,7,Bachelor's,Day,Hyderabad,52000,3.6,Active
+EMP005,Vikram Nair,Male,26,IT,Junior Developer,Full-Time,15-01-2023,2,Bachelor's,Day,Pune,38000,3.5,Active
+EMP006,Deepa Rao,Female,39,Operations,Shift Supervisor,Full-Time,22-04-2014,15,Diploma,Night,Chennai,58000,4,Active
+EMP007,Suresh Mehta,Male,52,Administration,Admin Head,Full-Time,01-07-2005,28,Bachelor's,Day,Mumbai,95000,4.7,Active
+EMP008,Anita Joshi,Female,29,IT,UI/UX Designer,Full-Time,17-08-2020,6,Bachelor's,Day,Bangalore,55000,4.1,Active
+EMP009,Ravi Verma,Male,41,Logistics,Logistics Coordinator,Full-Time,28-02-2012,18,Diploma,Day,Delhi,62000,3.9,Active
+EMP010,Kavita Iyer,Female,35,Finance,Financial Analyst,Full-Time,14-05-2017,12,Master's,Day,Mumbai,78000,4.3,Active
+EMP011,Mohammed Ali,Male,30,IT,Backend Developer,Full-Time,05-03-2019,7,Bachelor's,Day,Hyderabad,65000,4,Active
+EMP012,Lakshmi Nambiar,Female,44,HR,HR Manager,Full-Time,30-10-2009,20,Master's,Day,Bangalore,88000,4.6,Active
+EMP013,Sanjay Gupta,Male,37,Sales,Sales Executive,Full-Time,20-01-2016,13,Bachelor's,Day,Pune,50000,3.7,Active
+EMP014,Meena Pillai,Female,25,Marketing,Content Writer,Contract,01-02-2024,2,Bachelor's,Day,Chennai,30000,3.4,Active
+EMP015,Arun Krishnan,Male,48,Operations,Plant Manager,Full-Time,15-06-2007,25,Master's,Day,Mumbai,110000,4.8,Active
+EMP016,Pooja Desai,Female,32,Finance,Payroll Specialist,Full-Time,10-09-2018,9,Bachelor's,Day,Delhi,48000,3.8,Active
+EMP017,Nitin Jain,Male,27,IT,QA Engineer,Full-Time,18-04-2022,3,Bachelor's,Day,Bangalore,42000,3.6,Active
+EMP018,Rekha Saxena,Female,55,Administration,Office Manager,Full-Time,05-11-2000,30,Diploma,Day,Mumbai,72000,4.4,Active
+EMP019,Kiran Babu,Male,33,Logistics,Warehouse Supervisor,Full-Time,22-08-2017,10,Diploma,Night,Hyderabad,46000,3.9,Active
+EMP020,Swati Kulkarni,Female,29,IT,Data Analyst,Full-Time,10-01-2021,5,Master's,Day,Pune,60000,4.2,Active
+EMP021,Harish Reddy,Male,43,Sales,Regional Sales Manager,Full-Time,14-03-2011,19,Bachelor's,Day,Chennai,92000,4.5,Active
+EMP022,Geeta Sharma,Female,38,HR,Training Coordinator,Full-Time,01-07-2015,14,Master's,Day,Delhi,55000,4,Active
+EMP023,Prakash Tiwari,Male,50,Finance,CFO Assistant,Full-Time,20-12-2008,22,Master's,Day,Mumbai,105000,4.7,Active
+EMP024,Divya Menon,Female,26,Marketing,Social Media Exec,Contract,15-06-2023,3,Bachelor's,Day,Bangalore,32000,3.5,Active
+EMP025,Santosh Patil,Male,36,Operations,Quality Inspector,Full-Time,08-10-2016,12,Diploma,Night,Pune,44000,3.7,Active
+EMP026,Neha Choudhary,Female,31,IT,Project Manager,Full-Time,25-05-2018,8,Master's,Day,Delhi,82000,4.3,Active
+EMP027,Manoj Shetty,Male,40,Logistics,Fleet Manager,Full-Time,14-02-2013,17,Bachelor's,Day,Mumbai,68000,4.1,Active
+EMP028,Usha Pillai,Female,47,Administration,Legal Advisor,Full-Time,01-09-2006,24,LLB,Day,Hyderabad,98000,4.6,Active
+EMP029,Rohit Bansal,Male,24,IT,Intern Developer,Internship,01-07-2024,1,Bachelor's,Day,Bangalore,18000,3.2,Active
+EMP030,Sindhu Nair,Female,34,Sales,Sales Analyst,Full-Time,30-11-2017,10,Bachelor's,Day,Chennai,54000,3.9,Active
+EMP031,Ajay Pandey,Male,29,HR,Recruiter,Full-Time,15-03-2020,6,Bachelor's,Day,Pune,40000,3.7,Active
+EMP032,Bhavana Joshi,Female,42,Finance,Senior Auditor,Full-Time,10-08-2011,18,CA,Day,Mumbai,95000,4.5,Active
+EMP033,Dinesh Rao,Male,38,Operations,Maintenance Engineer,Full-Time,20-04-2015,14,BE,Night,Delhi,62000,4,Active
+EMP034,Pallavi Mishra,Female,27,Marketing,Brand Executive,Full-Time,05-09-2022,4,MBA,Day,Bangalore,47000,3.6,Active
+EMP035,Venkat Subramaniam,Male,53,Administration,Director,Full-Time,12-01-2003,32,MBA,Day,Mumbai,145000,4.9,Active
+EMP036,Chitra Varma,Female,36,IT,Cybersecurity Analyst,Full-Time,18-06-2016,12,Master's,Day,Hyderabad,88000,4.4,Active
+EMP037,Ganesh Kulkarni,Male,31,Logistics,Customs Officer,Full-Time,22-07-2019,8,Bachelor's,Day,Pune,52000,3.8,Active
+EMP038,Archana Singh,Female,45,HR,HR Director,Full-Time,31-03-2008,22,MBA,Day,Delhi,115000,4.7,Active
+EMP039,Ramesh Nayak,Male,28,Sales,Telesales Agent,Full-Time,01-10-2021,4,Bachelor's,Day,Chennai,35000,3.4,Active
+EMP040,Sudha Krishnamurthy,Female,50,Finance,Finance Manager,Full-Time,06-05-2007,27,CA,Day,Bangalore,120000,4.8,Active
