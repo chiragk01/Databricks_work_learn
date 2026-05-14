@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Execute_Bronze_to_Silver",
+				"name": "Execute_Source_to_Silver",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"policy": {
@@ -23,7 +23,7 @@
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
-						"activity": "Execute_Bronze_to_Silver",
+						"activity": "Execute_Source_to_Silver",
 						"dependencyConditions": [
 							"Succeeded"
 						]
