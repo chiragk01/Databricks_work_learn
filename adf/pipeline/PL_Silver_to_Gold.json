@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Customer_Metrics",
+				"name": "Customer_Metricss",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -33,7 +33,7 @@
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Customer_Metrics",
+						"activity": "Customer_Metricss",
 						"dependencyConditions": [
 							"Succeeded"
 						]
